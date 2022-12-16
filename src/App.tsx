@@ -3,6 +3,8 @@ import { Greet } from './components/Greet';
 import { Person } from './components/Person';
 import { Persons } from './components/PersonList';
 import { Staus } from './components/Staus';
+import { Oscar } from './components/Oscar';
+import { Header } from './components/Header';
 
 
 function App() {
@@ -33,6 +35,10 @@ function App() {
       <Person name={person} />
       <Persons names={personList} />
       <Staus status="loading" />
+      <Header>This is header</Header>
+      <Oscar>
+        <Header>This is inside component </Header>
+      </Oscar>
     </div>
   );
 }
