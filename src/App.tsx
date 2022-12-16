@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <Greet name='Nuwan' messageCount={6} isLoggedIn={false} />
+      <Greet name='Nuwan' isLoggedIn={true} />
       <Person name={person} />
       <Persons names={personList} />
       <Staus status="loading" />
