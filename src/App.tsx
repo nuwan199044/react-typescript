@@ -5,6 +5,8 @@ import { Persons } from './components/PersonList';
 import { Staus } from './components/Staus';
 import { Oscar } from './components/Oscar';
 import { Header } from './components/Header';
+import { Button } from './components/Button';
+import { Input } from './components/Input';
 
 
 function App() {
@@ -39,6 +41,12 @@ function App() {
       <Oscar>
         <Header>This is inside component </Header>
       </Oscar>
+      <Button 
+        handleClick={(event, id) => {
+          console.log('Button clicked', event, id)
+        }} 
+      />
+      <Input value='' handleChange={(event) => console.log(event)} />
     </div>
   );
 }
