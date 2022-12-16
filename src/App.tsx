@@ -2,6 +2,8 @@ import './App.css';
 import { Greet } from './components/Greet';
 import { Person } from './components/Person';
 import { Persons } from './components/PersonList';
+import { Staus } from './components/Staus';
+
 
 function App() {
 
@@ -30,6 +32,7 @@ function App() {
       <Greet name='Nuwan' messageCount={6} isLoggedIn={false} />
       <Person name={person} />
       <Persons names={personList} />
+      <Staus status="loading" />
     </div>
   );
 }
